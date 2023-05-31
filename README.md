@@ -1,3 +1,3 @@
 # DrinksToGo
 
-Ссылка на проект ()
+[Ссылка на проект] (https://kskroha.github.io/DrinksToGo/build/)
