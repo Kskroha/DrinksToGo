@@ -1,0 +1,159 @@
+.hero__slide {
+  padding: 20px 0 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__slide--first {
+  background-color: @flat-white;
+}
+
+.hero__slide--second {
+  background-color: @lavendar-latte;
+}
+
+.hero__slide--third {
+  background-color: @espresso;
+}
+
+.hero__text {
+  max-width: 306px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__badge {
+  .badge();
+  margin-bottom: 4px;
+}
+
+.hero__title {
+  .slider-title-mobile();
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.hero__description {
+  .slider-descr-mobile();
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.hero__old-price {
+  .product-oldprice();
+  margin-right: 6px;
+}
+
+.hero__price {
+  .product-price();
+  margin-right: 16px;
+}
+
+.hero__button {
+  .slider-button-text();
+}
+
+.hero__image {
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero__text {
+    order: -1;
+    max-width: 635px;
+    margin-bottom: 22px;
+  }
+
+  .hero__title {
+    .slider-title-desktop();
+    margin-bottom: 16px;
+  }
+
+  .hero__description {
+    .slider-descr-desktop();
+    text-align: center;
+  }
+
+  .hero__image {
+    width: 476px;
+    height: 476px;
+    margin-bottom: 0;
+  }
+
+  .hero__slide {
+    padding: 60px 0 0;
+  }
+
+  .hero__slide--first {
+    background-image: linear-gradient(@flat-white 77%, @white 77%);
+  }
+
+  .hero__slide--second {
+    background-image: linear-gradient(@lavendar-latte 77%, @white 77%);
+  }
+
+  .hero__slide--third {
+    background-image: linear-gradient(@espresso 77%, @white 77%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero__text {
+    order: 1;
+    align-items: unset;
+    padding-left: 45px;
+    margin-bottom: 0;
+    max-width: 660px;
+  }
+
+  .hero__slide {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 84px;
+  }
+
+  .hero__slide--first {
+    background-image: none;
+  }
+
+  .hero__slide--second {
+    background-image: none;
+  }
+
+  .hero__slide--third {
+    background-image: none;
+  }
+
+  .hero__image {
+    width: 600px;
+    height: 600px;
+    transform: translateX(15px);
+  }
+
+  .hero__title {
+    text-align: left;
+  }
+
+  .hero__description {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .hero__price-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__price {
+    margin-right: 20px;
+  }
+
+  .hero__button {
+    padding: 8px 20px;
+  }
+}

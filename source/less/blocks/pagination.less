@@ -1,0 +1,178 @@
+.pagination {
+  display: flex;
+}
+
+.pagination__list {
+  display: flex;
+  .list-reset();
+  margin: 0 20px;
+}
+
+.pagination__link {
+  .link-reset();
+  .align-center();
+  width: 40px;
+  height: 40px;
+  background-color: @white;
+  border-radius: 4px;
+  color: @primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:focus {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+    color: @white;
+  }
+
+  &:disabled {
+    background-color: @grey;
+    color: @white;
+  }
+}
+
+.pagination__link--current {
+  background-color: transparent;
+  font-weight: 600;
+  color: @black;
+}
+
+.pagination__button {
+  .link-reset();
+  width: 40px;
+  height: 40px;
+  background-color: @white;
+  border-radius: 4px;
+  color: @primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:focus {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+    color: @white;
+  }
+
+  &:disabled {
+    background-color: @grey;
+    color: @white;
+  }
+}
+
+.pagination__item {
+  margin-right: 20px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
+.pagination__prev {
+  display: none;
+}
+
+.pagination__next {
+  display: none;
+}
+
+.pagination__button--prev {
+  background-image: url("../img/pag-left.svg");
+
+  &:hover {
+    background-image: url("../img/pag-left-white.svg");
+  }
+
+  &:focus {
+    background-image: url("../img/pag-left-white.svg");
+  }
+
+  &:active {
+    background-image: url("../img/pag-left-white.svg");
+  }
+
+  &:disabled {
+    background-image: url("../img/pag-left-white.svg");
+  }
+}
+
+.pagination__button--next {
+  background-image: url("../img/pag-right.svg");
+
+  &:hover {
+    background-image: url("../img/pag-right-white.svg");
+  }
+
+  &:focus {
+    background-image: url("../img/pag-right-white.svg");
+  }
+
+  &:active {
+    background-image: url("../img/pag-right-white.svg");
+  }
+
+  &:disabled {
+    background-image: url("../img/pag-right-white.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .pagination__prev {
+    display: block;
+  }
+
+  .pagination__next {
+    display: block;
+  }
+
+  .pagination__button--prev,
+  .pagination__button--next {
+    background-image: none;
+    padding: 8px 20px;
+    width: fit-content;
+    height: 40px;
+
+    &:hover {
+      background-image: none;
+    }
+
+    &:focus {
+      background-image: none;
+    }
+
+    &:active {
+      background-image: none;
+    }
+
+    &:disabled {
+      background-image: none;
+    }
+  }
+
+  .pagination__list {
+    margin: 0 21px;
+  }
+}

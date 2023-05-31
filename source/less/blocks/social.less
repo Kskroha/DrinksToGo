@@ -1,0 +1,51 @@
+.social {
+  .list-reset();
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
+.social__icon {
+  object-fit: contain;
+  color: @grey;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: @secondary;
+  }
+
+  &:hover svg {
+    color: @primary;
+  }
+
+  &:focus {
+    background-color: @secondary;
+  }
+
+  &:focus svg {
+    color: @primary;
+  }
+
+  &:active {
+    color: @primary;
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active svg {
+    color: @primary;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    gap: 19px;
+  }
+}

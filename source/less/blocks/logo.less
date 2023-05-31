@@ -1,0 +1,38 @@
+.logo__text {
+  display: none;
+  text-decoration: none;
+  color: @black;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__image {
+    width: 82px;
+    height: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+    display: flex;
+    margin-right: 141px;
+    flex-shrink: 0;
+  }
+
+  .logo__image {
+    margin-right: 20px;
+    width: 170px;
+    height: 36px;
+  }
+
+  .logo__text {
+    padding-top: 4px;
+    display: block;
+    max-width: 147px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

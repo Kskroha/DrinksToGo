@@ -1,0 +1,138 @@
+.advantages__container {
+  padding: 50px 0 60px;
+  .center-mobile();
+  .align-center();
+  flex-direction: column;
+}
+
+.advantages__list {
+  .list-reset();
+}
+
+.advantages__badge {
+  .badge();
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.advantages__title {
+  .h2-mobile();
+  text-align: center;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.advantages__heading {
+  .h3-mobile();
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.advantages__description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.advantages__item {
+  padding-top: 66px;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 52px 56px;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__item--speed {
+  background-image: url("../img/speed.svg");
+}
+
+.advantages__item--comfort {
+  background-image: url("../img/fit.svg");
+}
+
+.advantages__item--energy {
+  background-image: url("../img/energy.svg");
+}
+
+.advantages__item--ecology {
+  background-image: url("../img/eco.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__container {
+    .center-tablet();
+    padding: 56px 30px 98px;
+  }
+
+  .advantages__title {
+    .h2-desktop();
+    margin-bottom: 60px;
+  }
+
+  .advantages__heading {
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 11px;
+  }
+
+  .advantages__description {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    gap: 25px 30px;
+  }
+
+  .advantages__item {
+    padding-top: 0;
+    padding-left: 72px;
+    margin-bottom: 0;
+    background-position: left top;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .advantages__container {
+    .center-desktop();
+    padding: 100px 40px 120px;
+  }
+
+  .advantages__list {
+    grid-template-columns: repeat(4, 321px);
+    gap: 50px 30px;
+  }
+
+  .advantages__title {
+    margin-bottom: 80px;
+  }
+
+  .advantages__item {
+    padding-left: 0;
+    padding-top: 74px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 52px 56px;
+  }
+
+  .advantages__heading {
+    text-align: center;
+  }
+
+  .advantages__description {
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
